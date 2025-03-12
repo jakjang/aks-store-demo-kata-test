@@ -15,6 +15,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: mongodb
         image: mcr.microsoft.com/mirror/docker/library/mongo:4.2
@@ -73,6 +74,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: rabbitmq
         image: mcr.microsoft.com/mirror/docker/library/rabbitmq:3.10-management-alpine
@@ -137,6 +139,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: order-service
         image: ghcr.io/azure-samples/aks-store-demo/order-service:latest
@@ -224,6 +227,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: makeline-service
         image: ghcr.io/azure-samples/aks-store-demo/makeline-service:latest
@@ -301,6 +305,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: product-service
         image: ghcr.io/azure-samples/aks-store-demo/product-service:latest
@@ -360,6 +365,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: store-front
         image: ghcr.io/azure-samples/aks-store-demo/store-front:latest
@@ -428,6 +434,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: store-admin
         image: ghcr.io/azure-samples/aks-store-demo/store-admin:latest
@@ -496,6 +503,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: virtual-customer
         image: ghcr.io/azure-samples/aks-store-demo/virtual-customer:latest
@@ -528,6 +536,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
+      runtimeClassName: kata-mshv-vm-isolation
       containers:
       - name: virtual-worker
         image: ghcr.io/azure-samples/aks-store-demo/virtual-worker:latest
